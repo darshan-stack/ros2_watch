@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>robowatch</name>
+  <version>0.1.0</version>
+  <description>Unified ROS2 health and debug CLI (robowatch).</description>
+  <maintainer email="user@example.com">robowatch</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <exec_depend>python3</exec_depend>
+  <exec_depend>ros2cli</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+    <ros2cli command="robowatch"/>
+  </export>
+</package>
+
